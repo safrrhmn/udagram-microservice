@@ -14,7 +14,7 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: appuser 
       POSTGRES_DB: udagram 
-      POSTGRES_HOST: host.docker.internal
+      POSTGRES_HOST: $POSTGRES_HOST
       AWS_REGION: $AWS_REGION 
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
@@ -28,13 +28,13 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: appuser 
       POSTGRES_DB: udagram
-      POSTGRES_HOST: host.docker.internal
+      POSTGRES_HOST: $POSTGRES_HOST
       AWS_REGION: $AWS_REGION
       AWS_PROFILE: $AWS_PROFILE 
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
   frontend:
-    image: udagram-frontend:local
+    image: udagram-frontend
     ports:
       - "8100:80"

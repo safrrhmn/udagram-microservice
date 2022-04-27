@@ -1,5 +1,4 @@
 FROM node:12
-ENV NODE_ENV=production
 # Create app directory
 WORKDIR /usr/src/app
 # Install app dependencies
@@ -9,4 +8,4 @@ RUN npm ci
 # Bundle app source
 COPY . .
 EXPOSE 8080
-CMD [ "npm", "run", "prod", "debug" ]
+CMD [ "npm", "run", "prod" ,"debug"]

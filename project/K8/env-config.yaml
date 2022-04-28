@@ -6,7 +6,7 @@ data:
   AWS_REGION: us-east-2
   JWT_SECRET: hello
   POSTGRES_DB: udagram
-  POSTGRES_HOST: udagram.cfqxg5devsc6.us-east-2.rds.amazonaws.com
+  POSTGRES_HOST: <secret>
   URL: http://localhost:8080
 metadata:
   name: env-config
